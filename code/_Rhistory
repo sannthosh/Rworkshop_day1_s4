@@ -1,0 +1,512 @@
+matrix2 <- array2[,,2]
+# Add the matrices.
+result <- matrix1+matrix2
+print(result)
+x <- list(1, "a", TRUE, 1 + (0+4i))
+x
+class(x)
+class(x[[1]])
+class(x[[2]])
+head(iris,n=10)
+list1<-list(a=iris[1:3,1:2],b=iris[4:7,2:3],c=head(iris),d=tail(iris))
+list1
+x1<-c(0.5,1.0,2.3,5.6,8.9)
+x2<-c(TRUE,FALSE,TRUE,FALSE,FALSE)
+x3<-c(T,F,T,T,T)
+x4<-c("dog","cat","rat","bag","bag")
+x5<-c(1:5)
+x7<-as.factor(x5)
+x7
+x6<-c(1+0i,NA,2+2i,4+1i,6+55i)
+df <-data.frame(x1,x2,x3,x4,x5,x6,x7)
+df
+df$x4
+#select rows based on column x1
+df[df$x1 == 2.3, ]
+setwd("E:/Desktop Backups/17 Desktop 9Sep18/iPrimed/TTT/DAY 1/Session 2/Codes")
+###########Load data from file
+fileDf <- read.csv("dateevent.csv")
+fileDf
+fileDf$event
+fileDf$hour
+salDf <- read.csv("Salary_Data.csv")
+salDf
+salDf$Salary
+mean(salDf$Salary)
+##structure of if else condition#####
+if (condition) {
+# do something
+} else {
+# do something else
+}
+#example
+x <- 1:15
+x
+sample(x)
+if (sample(x, 1) <= 10) {
+print("x is less than 10")
+} else {
+print("x is greater than 10")
+}
+#vectorization form of ifelse
+ifelse(x <= 10, "x less than 10", "x greater than 10")
+if (sample(x, 1) < 10) {
+y <- 5
+} else {
+y <- 0
+}
+y <- if (sample(x, 1) < 10) {
+5
+} else {
+0
+}
+#for loop
+for (i in 1:10) {
+print(i)
+}
+x <- c("apples", "oranges", "bananas", "strawberries")
+for (i in x) {
+print(x[i])
+}
+for (i in 1:4) {
+print(x[i])
+}
+x <- c("apples", "oranges", "bananas", "strawberries")
+for (i in x.leangth() ) {
+print(x[i])
+}
+for (i in x.length() ) {
+print(x[i])
+}
+for (i in x.length) {
+print(x[i])
+}
+for (i in length(x)) {
+print(x[i])
+}
+for (i in c(1:length(x)) {
+for (i in 1:length(x)) {
+print(x[i])
+}
+for (i in seq(x)) {
+print(x[i])
+}
+seq(x)
+for (i in x) {
+print(x[i])
+}
+for (i in 1:4) print(x[i])
+m <- matrix(1:10, 2)
+m
+for (i in seq(nrow(m))) {
+for (j in seq(ncol(m))) {
+print(m[i, j])
+}
+}
+#while loop
+i <- 1
+while (i < 10) {
+print(i)
+i <- i + 1
+}
+#even number
+for (i in 1:20) {
+if (i%%2 == 1) {
+next
+} else {
+print(i)
+}
+}
+function(x) x
+f <- function(x) x
+f(5)
+f
+formals(f)
+environment(f)
+#square
+sqr <- function(x1) x1*x1
+sqr(4)
+#example
+x <- 5
+f <- function() {
+y <- 10
+c(x = x, y = y)
+}
+f()
+#Override the values
+x <- 5
+g <- function() {
+x <- 20
+y <- 10
+c(x = x, y = y)
+}
+g()
+#Nested functions
+x <- 5
+h <- function() {
+y <- 10
+i <- function() {
+z <- 20
+c(x = x, y = y, z = z)
+}
+i()
+}
+h()
+# Create a function to print squares of numbers in sequence.
+new.function <- function(a) {
+for(i in 1:a) {
+b <- i^2
+print(b)
+}
+}
+# Call the function new.function supplying 6 as an argument.
+new.function(6)
+############################### Built In Functions ############################################
+# Create a sequence of numbers from 32 to 44.
+print(seq(32,44))
+# Find mean of numbers from 25 to 82.
+print(mean(25:82))
+# Find sum of numbers frm 41 to 68.
+print(sum(41:68))
+# Create a function without an argument.
+new.function <- function() {
+for(i in 1:5) {
+print(i^2)
+}
+}
+# Call the function without supplying an argument.
+new.function()
+# Create a function with arguments.
+new.function <- function(a,b,c) {
+result <- a * b + c
+print(result)
+}
+# Call the function by position of arguments.
+new.function(5,3,11)
+# Call the function by names of the arguments.
+new.function(a = 11, b = 5, c = 3)
+# Create a function with arguments.
+new.function <- function(a = 3, b = 6) {
+result <- a * b
+print(result)
+}
+# Call the function without giving any argument.
+new.function()
+# Call the function with giving new values of the argument.
+new.function(9,5)
+# Create a function with arguments.
+new.function <- function(a, b) {
+print(a^2)
+print(a)
+print(b)
+}
+# Evaluate the function without supplying one of the arguments.
+new.function(6)
+mtcars
+m <- matrix(c(1:10,11:20), nrow=5, ncol=4)
+m
+# compute average for all the columns
+apply(m,2,mean)
+# compute average for all the rows
+apply(m,1,mean)
+mtcars
+mtcars <- mtcars[-1]
+# by function
+class(mtcars)
+mtcars
+mtcars
+mtcars <- mtcars[-1]
+mtcars
+mtcars <- mtcars[-1]
+mtcars
+mtcars
+mtcars <- mtcars[-1]
+# by function
+class(mtcars)
+head(mtcars)
+names(mtcars)
+#compute the average  by cylnder type
+by(mtcars, mtcars$cyl, colMeans)
+View(mtcars)
+#by function for categorical variables
+by(mtcars[,c(1,5)], factor(mtcars$cyl), colMeans)
+# eapply function
+# computes the statistical function by an environment
+e <- new.env()
+e$a <- 1:100
+e$b <- 2003:2300
+e
+a<-c(10,20,30)
+mean(a)
+mean(e)# this is erroneous
+eapply(e, mean) # applies function to each of the elements in a list
+# lapply is applicable when your input is a list and
+#it also returns output as a list
+mylist<- as.list(mtcars)
+mylist
+lapply(mylist, median)
+lapply(mylist, mean)
+# sapply - similar to vapply
+# sapply takes input as list/matrix and output is a vector
+#The sapply() function works like lapply(), but it tries to simplify
+#the output to the most elementary data structure that is possible.
+#And indeed, sapply() is a 'wrapper' function for lapply().
+sapply(mylist, median)
+lapply(mylist, median)
+# sapply - similar to vapply
+# sapply takes input as list/matrix and output is a vector
+#The sapply() function works like lapply(), but it tries to simplify
+#the output to the most elementary data structure that is possible.
+#And indeed, sapply() is a 'wrapper' function for lapply().
+sapply(mylist, median)
+# vapply
+vapply(mylist, fivenum, c(min=0,'Q1'=0,median =0, 'Q3'=0, max=0))
+# replicate function
+replicate(5, rnorm(5, 100, 2), simplify=T)
+#mapply
+#The mapply() function stands for 'multivariate' apply.
+#Its purpose is to be able to vectorize arguments to a function
+#that is not usually accepting vectors as arguments.
+l1 <- list(mtcars[,1:4])
+l1
+str(l1)
+l2 <- list(mtcars[,3:8])
+l2
+str(l2)
+# sum of corresponding elements captured in L1 and L2
+sum(mtcars[1],mtcars[2],mtcars[3],mtcars[4],mtcars[3],mtcars[4],mtcars[5],mtcars[6],mtcars[7],mtcars[8])
+sum(10,12,13)
+mapply(sum, x=l1,y=l2)
+# rapply - recursive apply
+rapply(mtcars[,1:3], log2, how='list')
+#tapply function
+#Apply a function to each cell of a ragged array, that is to each (non-empty)
+#group of values given by a unique combination of the levels of certain factors.
+tapply(mtcars$mpg, mtcars$cyl, mean)
+tapply(c(1:10), c(1:10), median)
+tapply(c(1:10), c(1:10), mean)
+#tapply function
+#Apply a function to each cell of a ragged array, that is to each (non-empty)
+#group of values given by a unique combination of the levels of certain factors.
+tapply(c(1:10), c(11:20), median)
+#tapply function
+#Apply a function to each cell of a ragged array, that is to each (non-empty)
+#group of values given by a unique combination of the levels of certain factors.
+tapply(c(1:11), c(11:20), median)
+#tapply function
+#Apply a function to each cell of a ragged array, that is to each (non-empty)
+#group of values given by a unique combination of the levels of certain factors.
+tapply(c(1:10), c(11:20), median)
+#tapply function
+#Apply a function to each cell of a ragged array, that is to each (non-empty)
+#group of values given by a unique combination of the levels of certain factors.
+tapply(c(c(1:10),c(11:20)), c(11:20), median)
+#tapply function
+#Apply a function to each cell of a ragged array, that is to each (non-empty)
+#group of values given by a unique combination of the levels of certain factors.
+tapply(c(1:10), c(11:20), mean)
+#tapply function
+#Apply a function to each cell of a ragged array, that is to each (non-empty)
+#group of values given by a unique combination of the levels of certain factors.
+tapply(c(1:10), c(11:20), mode)
+#tapply function
+#Apply a function to each cell of a ragged array, that is to each (non-empty)
+#group of values given by a unique combination of the levels of certain factors.
+tapply(c(1:10), c(11:20), sd)
+#tapply function
+#Apply a function to each cell of a ragged array, that is to each (non-empty)
+#group of values given by a unique combination of the levels of certain factors.
+tapply(c(1:10), c(11:20), mean)
+tapply(iris$Sepal.Width, iris$Species, median)
+head(iris)
+#tapply function
+#Apply a function to each cell of a ragged array, that is to each (non-empty)
+#group of values given by a unique combination of the levels of certain factors.
+tapply(mtcars$disp,mtcars$cyl, median)
+#tapply function
+#Apply a function to each cell of a ragged array, that is to each (non-empty)
+#group of values given by a unique combination of the levels of certain factors.
+tapply(mtcars$disp,mtcars$cyl, mean)
+library(tidyr)
+library(tidyr)
+#library(dplyr)
+mtcars
+class(mtcars)
+head(mtcars)
+tail(mtcars)
+#display One column
+mtcars$mpg
+class(mtcars$mpg)
+#Display rows
+mtcars[1,]
+mtcars[1:5,]
+mtcars[c(1,6,7),] # to display specified random rows???
+#Display columns
+mtcars[,2]
+mtcars[,1:5]
+mtcars[,c(3,5,7)] # to display specified random columns???
+mtcars$car <- rownames(mtcars)
+mtcars <- mtcars[, c(12, 1:11)]
+head(mtcars)
+#library(dplyr)
+mtcars
+mtcars[,12]
+mtcars[,11]
+mtcars$car <- rownames(mtcars)
+mtcars <- mtcars[, c(12, 1:11)]
+head(mtcars)
+mtcarsNew <- mtcars %>% gather(attribute, value, -car)
+head(mtcarsNew)
+tail(mtcarsNew)
+#Spread ...... converts the longer format to wide
+mtcarsSpread <- mtcarsNew %>% spread(attribute, value)
+head(mtcarsSpread)
+setwd("E:/Desktop Backups/17 Desktop 9Sep18/iPrimed/TTT/DAY 1/Session 4/code")
+data <- read.csv("dateevent.csv")
+data
+dataNew <- data %>%
+unite(datehour, date, hour, sep = ' ') %>%
+unite(datetime, datehour, min, second, sep = ':')
+dataNew
+#Separate
+data1 <- dataNew %>%
+separate(datetime, c('date', 'time'), sep = ' ') %>%
+separate(time, c('hour', 'min', 'second'), sep = ':')
+data1
+#create dataset
+Name <- c("John", "Tim", NA)
+Sex <- c("men", "men", "women")
+Age <- c(45, 53, NA)
+dt <- data.frame(Name, Sex, Age)
+dt
+#Now will see for missings in the dataset
+is.na(dt)
+# find sum or percentage of missing values
+sum(is.na(dt))
+mean(is.na(dt))*100
+#statistical applications the missing values might be coded with a number, for example 99
+dt$Age[dt$Age == 99] <- NA
+dt
+#statistical applications the missing values might be coded with a number, for example 99
+dt$Age[dt$Age == 53] <- NA
+dt
+#na.omit
+Name <- c("John", "Tim", NA)
+Sex <- c("men", NA, "women")
+Age <- c(45, 53, NA)
+dt <- data.frame(Name, Sex, Age)
+dt
+dt2 <- na.omit(dt)
+dt2
+#na.rm
+mean(dt$Age)
+mean(dt$Age,na.rm = TRUE)
+#complete.cases
+dt[!complete.cases(dt),]
+nrow(dt[complete.cases(dt),])
+nrow(dt)
+ncol(dt)
+# Train dataset
+train_dataset <- read.csv("train.csv")
+nrow(train_dataset)
+ncol(train_dataset)
+head(train_dataset)
+nrow(train_dataset)
+sum(is.na(train_dataset))
+mean(train_dataset$Age, na.rm = TRUE)
+summary(train_dataset)
+63333
+nrow(train_dataset)
+sum(is.na(train_dataset))
+mean(train_dataset$Age, na.rm = TRUE)
+summary(train_dataset)
+sum(is.na(train_dataset[,1]))
+apply(train_dataset, 2,is.na)
+apply(train_dataset, 2,sum(is.na))
+colSums(is.na(train_dataset))
+library(dplyr)
+library(ggplot2)
+diamonds
+nrow(diamonds)
+head(diamonds)
+nrow(diamonds)
+# application of filter function
+df <- filter(diamonds, cut=='Good')
+head(df)
+nrow(df)
+# application of filter function
+df <- filter(diamonds, price > 326 & price < 400)
+head(df)
+dim(df)
+# select function
+df <- select(diamonds, carat, cut, color, clarity, depth, price)
+head(df)
+# mutate function
+df1 <- mutate(diamonds, per_carat_p = price/carat)
+head(df1)
+# arrange function
+df<-arrange(diamonds,price)
+tail(df)
+# arrange function
+df<-arrange(diamonds,desc(price))
+head(df)
+#summarize function
+summarize(diamonds, mean_price= mean(price, na.rm=T),
+median_price = median(price,na.rm = T))
+#introduction to pipe operator
+df <- diamonds %>%
+filter(cut=="Ideal") %>%
+select(carat, cut, color, price, clarity) %>%
+mutate(price_per_c = price/carat)
+head(df)
+head(select(diamonds,-color))
+head(select(diamonds,carat:table))
+head(select(diamonds,starts_with("c")))
+head(select(diamonds,ends_with("y")))
+head(select(diamonds,contains("pth")))
+head(filter(diamonds, price >= 1000))
+head(filter(diamonds, price >= 1000, depth >= 60, carat >= 0.80))
+head(filter(diamonds, cut %in% c("Good","Ideal")))
+diamonds %>% select(price, table) %>% head
+diamonds %>% arrange(desc(price)) %>% head
+diamonds %>% summarise(median_price = median(price))
+diamonds %>%
+group_by(clarity) %>%
+summarise(avg_price=mean(price),
+avg_carat=mean(carat))
+distinct(diamonds, color)
+# arrange function
+df<-arrange(diamonds,price)
+tail(df)
+head(df)
+# arrange function
+df<-arrange(diamonds,desc(price))
+head(df)
+# mutate function
+df1 <- mutate(diamonds, per_carat_p = price/carat)
+head(df1)
+#summarize function
+summarize(diamonds, mean_price= mean(price, na.rm=T),
+median_price = median(price,na.rm = T))
+#introduction to pipe operator
+df <- diamonds %>%
+filter(cut=="Ideal") %>%
+select(carat, cut, color, price, clarity) %>%
+mutate(price_per_c = price/carat)
+head(df)
+head(select(diamonds,-color))
+head(select(diamonds,carat:table))
+head(select(diamonds,starts_with("c")))
+head(select(diamonds,ends_with("y")))
+head(select(diamonds,contains("pth")))
+head(filter(diamonds, price >= 1000))
+head(filter(diamonds, price >= 1000, depth >= 60, carat >= 0.80))
+head(filter(diamonds, cut %in% c("Good","Ideal")))
+diamonds %>% select(price, table) %>% head
+diamonds %>% arrange(desc(price)) %>% head
+diamonds %>% summarise(median_price = median(price))
+diamonds %>%
+group_by(clarity) %>%
+summarise(avg_price=mean(price),
+avg_carat=mean(carat))
+distinct(diamonds, color)
